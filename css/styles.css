@@ -551,10 +551,9 @@ p {
   color: var(--accent-color);
 }
 
-.join-soc-networks{
-  display: block
-  margin-left: 70px;
-  
+.join-soc-networks {
+  display: block;
+  margin-right: 70px;
 }
 
 .soc-title {
@@ -571,7 +570,7 @@ p {
 
 .soc-list {
   display: flex;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .join-soc-item {
@@ -603,3 +602,4 @@ p {
 
 .team-soc-icon {
   fill: currentColor;
+}
