@@ -16,18 +16,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .list {
   list-style: none;
   padding: 0;
@@ -62,6 +50,19 @@ p {
   padding-right: 15px;
   /* border: 1px solid red; */
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*---------------Header for Studio and Portfolio*--------------------/
 /* LINE */
 .header {
@@ -175,6 +176,7 @@ p {
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/img-hero.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -361,7 +363,7 @@ p {
   height: 100%;
   background-color: var(--primary-background-color);
   border-radius: 50%;
-  color: var(--text-color);
+  color: #afb1b8;
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
@@ -389,35 +391,28 @@ p {
 .customers-icon-list .item-customers + .item-customers {
   margin-left: var(--card-set-gap);
 }
-.item-customers {
-  display: inherit;
-  align-items: center;
+
+.item-customers-link {
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.item-customers-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+.item-customers-link:hover,
+.item-customers-link:focus {
+  border-color: #2196f3;
+  fill: var(--accent-color);
 }
 .company-icon {
-  width: 100%;
-  height: 100%;
-  padding: 16px 32px;
-  fill: var(--text-color);
+  fill: #afb1b8;
 }
 .company-icon:hover,
-.company-icon:hover {
+.company-icon:focus {
   fill: var(--accent-color);
-  border: 1px solid #2196f3;
-  border-radius: 4px;
 }
-
 /*------------------------- Main portfolio.html----------------*/
 /*-----------list buttons----------------------------*/
 .bottons-list {
@@ -468,16 +463,17 @@ p {
   margin-top: var(--card-set-gap);
 }
 
-.item-card:hover,
-.item-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-card-link {
+  display: block;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .data-gallery {
-  background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px 20px 24px;
@@ -550,10 +546,16 @@ p {
 .address .link-address:focus {
   color: var(--accent-color);
 }
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
 
+.footer-logo-address {
+  margin-right: 70px;
+}
 .join-soc-networks {
   display: block;
-  margin-right: 70px;
 }
 
 .soc-title {
@@ -595,11 +597,11 @@ p {
 }
 
 .join-soc-link:hover,
-.tjoin-soc-link:focus {
+.join-soc-link:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
 
-.team-soc-icon {
+.join-soc-icon {
   fill: currentColor;
 }
