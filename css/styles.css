@@ -8,6 +8,7 @@
   --filter-background-color: #f5f4fa;
   --card-set-gap: 30px;
   --hero-background-color: #2f303a;
+  --icons-color: #afb1b8;
 }
 body {
   background: var(--primary-background-color);
@@ -119,6 +120,7 @@ p {
   color: var(--text-color);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .contacts-nav .link.current {
@@ -314,7 +316,7 @@ p {
 }
 
 .item-team {
-  background: #ffffff;
+  background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -365,7 +367,7 @@ p {
   height: 100%;
   background-color: var(--primary-background-color);
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--icons-color);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
@@ -400,13 +402,13 @@ p {
   align-items: center;
   width: 170px;
   height: 92px;
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
+  color: var(--icons-color);
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 .item-customers-link:hover,
 .item-customers-link:focus {
-  border-color: #2196f3;
+  border-color: var(--accent-color);
   color: var(--accent-color);
 }
 .company-icon {
@@ -540,7 +542,6 @@ p {
 }
 .link-tel,
 .link-mail {
-  /* margin-bottom: 9px; */
   color: rgba(255, 255, 255, 0.6);
 }
 .address .link:hover,
