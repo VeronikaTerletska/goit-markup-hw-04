@@ -117,6 +117,8 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
 }
 
 .contacts-nav .link.current {
@@ -398,16 +400,17 @@ p {
   align-items: center;
   width: 170px;
   height: 92px;
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .item-customers-link:hover,
 .item-customers-link:focus {
   border-color: #2196f3;
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 .company-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .company-icon:hover,
 .company-icon:focus {
